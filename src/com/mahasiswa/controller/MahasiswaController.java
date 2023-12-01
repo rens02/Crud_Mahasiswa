@@ -39,7 +39,7 @@ public class MahasiswaController {
         mahasiswa.setKd_mahasiswa(this.mahasiswaView.getTxtNpm().getText());
         mahasiswa.setNama(this.mahasiswaView.getTxtNama().getText());
         mahasiswa.setKelas(this.mahasiswaView.getTxtKelas().getText());
-        mahasiswa.setNope(Integer.parseInt(this.mahasiswaView.getTxtNope().getText()));
+        mahasiswa.setNope((this.mahasiswaView.getTxtNope().getText()));
         
         try{
             mahasiswaDao.save(mahasiswa);
@@ -56,7 +56,7 @@ public class MahasiswaController {
         mahasiswa.setKd_mahasiswa(this.mahasiswaView.getTxtNpm().getText());
         mahasiswa.setNama(this.mahasiswaView.getTxtNama().getText());
         mahasiswa.setKelas(this.mahasiswaView.getTxtKelas().getText());
-        mahasiswa.setNope(Integer.parseInt(this.mahasiswaView.getTxtNope().getText()));
+        mahasiswa.setNope((this.mahasiswaView.getTxtNope().getText()));
         
         try{
             mahasiswaDao.update(mahasiswa);

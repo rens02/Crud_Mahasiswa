@@ -52,8 +52,8 @@ public class MahasiswaTabelModel extends AbstractTableModel {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
-    public String getColumnName(int index, String[] getHEADER){
-        return getHEADER[index];
+    public String getColumnName(int index){
+        return HEADER[index];
     }
 }
  

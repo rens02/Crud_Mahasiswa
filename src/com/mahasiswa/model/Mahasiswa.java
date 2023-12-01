@@ -19,12 +19,12 @@ public class Mahasiswa implements Serializable{
     @Id
     @Column(name = "NPM", length = 15)
     private String kd_mahasiswa;
-    @Column(name = "nama", length = 20)
+    @Column(name = "nama", length = 99)
     private String nama;
     @Column(name = "kelas", length = 20)
     private String kelas;
-    @Column(name = "Nomor Telepon", length = 15)
-    private int nope;
+    @Column(name = "NomorTelepon", length = 99)
+    private String nope;
 
     public String getKd_mahasiswa() {
         return kd_mahasiswa;
@@ -50,11 +50,11 @@ public class Mahasiswa implements Serializable{
         this.kelas = kelas;
     }
 
-    public int getNope() {
+    public String getNope() {
         return nope;
     }
 
-    public void setNope(int nope) {
+    public void setNope(String nope) {
         this.nope = nope;
     } 
 }
